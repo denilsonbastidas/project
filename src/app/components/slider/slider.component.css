@@ -1,0 +1,15 @@
+/* slider */
+
+.carousel-item{
+    height: 500px;
+}
+.sep-carousel{
+    width: 6%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.lead{
+    text-transform: uppercase;
+}

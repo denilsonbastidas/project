@@ -1,0 +1,19 @@
+@import url("../assets/varColors.css");
+/* navbar */
+.cont-logo{
+    width: 230px;
+}
+.navbar-nav .nav-link, 
+.navbar-nav button{
+    text-transform: uppercase;
+}
+.navbar-nav .nav-link{
+    font-size: 15.7px;
+}
+.active{
+    color: var(--color-claro) !important;
+}
+.btn-toggle{
+    background-color: var(--color-active);
+}
+

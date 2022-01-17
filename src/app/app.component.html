@@ -1,25 +1,63 @@
 <!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  <div class="container-fluid">
 
-<div class="container-fluid">
+    <a class="navbar-brand cont-logo" href="/">
+      <img src="../assets/images/logo-hc.png" class="d-block w-100" alt="logo empresa">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="d-block mx-5"></div>
+    <div class="d-block mx-5"></div>
+    <div class="d-block mx-5"></div>
+    <div class="d-block mx-4"></div>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+        <a class="nav-link" href="#">Áreas</a>
+        <a class="nav-link" href="#">Proyectos</a>
+        <a class="nav-link" href="#">Equipo</a>
+        <a class="nav-link" href="#">Clientes</a>
+        <a class="nav-link" href="#">Contacto</a>
+
+        <li class="nav-item dropdown mx-4">
+          <a class="btn btn-toggle text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Intranet
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Ir al Intranet</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Login</a></li>
+          </ul>
+        </li>
+    </div>
+  </div>
+
+  </div>
+</nav>
+
   <!-- slider -->
   <app-slider></app-slider>
-  
+
   <!-- nosotros -->
   <app-nosotros></app-nosotros>
-  
+
   <!-- area -->
   <app-areas></app-areas>
-  
+
   <!-- proyectos -->
   <app-proyectos></app-proyectos>
-  
+
   <!-- equipos -->
   <app-equipo></app-equipo>
-  
+
   <!-- clientes -->
   <app-clientes></app-clientes>
-  
+
   <!-- contacto -->
   <app-contacto></app-contacto>
-</div>
-
