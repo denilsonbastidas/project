@@ -3,6 +3,7 @@
 body{
     font-family: var(--font-main) !important;
     scroll-behavior: smooth;
+    color: #555;
 }
 /* hr separations */
 .sep-carousel{
