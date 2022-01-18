@@ -1,2 +1,41 @@
 @import url("../../../assets/varColors.css");
 
+.cont-nosotros{
+    margin-top: 120px;
+}
+.cont-nosotros button{
+  border-radius: 0;
+  background-color: var(--color-active);
+  border: none;
+}
+.cont-nosotros button:hover{
+  background-color: var(--color-btns);
+}
+
+
+/* collapse section */
+.cont-icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 555px;
+}
+.cont-icon i{
+  color: var(--color-btns);
+  font-size: 35px;
+}
+/* content dinamic */
+.cont-dinamic{
+  animation: showproject 1s ease;
+  background-image: url("../../../assets/images/banner-Inspeccion.jpg");
+  height: 500px;
+}
+
+@keyframes showproject {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+

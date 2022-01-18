@@ -4,3 +4,16 @@ body{
     font-family: var(--font-main) !important;
     scroll-behavior: smooth;
 }
+/* hr separations */
+.sep-carousel{
+    width: 4%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.sep-link{
+    width: 3%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: var(--color-btns);
+}

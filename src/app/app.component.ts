@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project';
+
+  
+  constructor(
+    private _renderer:Renderer2
+  ){
+  }
+  ngOnInit() {  }
+  // 
+   animateNavbar(navbar:any) {
+      
+    let scrollUserY = window.scrollY
+        
+    if (scrollUserY > 100) {
+       return this._renderer.addClass(navbar,'event-scroll');
+    } else {
+      return this._renderer.removeClass(navbar,'event-scroll');
+    }
+  }
+
 }

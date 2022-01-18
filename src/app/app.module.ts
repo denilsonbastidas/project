@@ -12,6 +12,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { AllproyectosComponent } from './components/allproyectos/allproyectos.component';
 import { SliderComponent } from './components/slider/slider.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,7 @@ import { SliderComponent } from './components/slider/slider.component';
     ClientesComponent,
     ContactoComponent,
     AllproyectosComponent,
-    SliderComponent
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
