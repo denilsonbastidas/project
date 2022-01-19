@@ -1,0 +1,28 @@
+#equipo{
+    background-color: #dddddd;
+    
+}
+p{
+    text-align: center;
+}
+.mT3{
+    margin-top: 3%;
+}
+
+.profile-bx {
+    position: relative;
+    padding: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+
+.cont-img{
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.equipo-img{
+    
+    width: 25%;
+}  
+
