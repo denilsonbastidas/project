@@ -24,12 +24,36 @@
   font-size: 35px;
 }
 /* content dinamic */
-.cont-dinamic{
+.cont-too img{
   animation: showproject 1s ease;
-  background-image: url("../../../assets/images/banner-Inspeccion.jpg");
-  height: 500px;
 }
 
+.cont-img-dinamic{
+  height: 500px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.cont-dinamic{
+  background-image: url("../../../assets/images/hc-calle.jpg");
+}
+.cont-vision{
+  background-image: url("../../../assets/images/vision.jpg");
+}
+.cont-vision p,
+.cont-mision p{
+  width: 35%;
+   font-size: 18px;
+   letter-spacing: 1px;
+}
+.cont-mision{
+  background-image: url("../../../assets/images/vision.jpg");
+}
+.cont-valores{
+  background-image: url("../../../assets/images/banner-Inspeccion.jpg");
+}
+
+
+  
 @keyframes showproject {
   0%{
     opacity: 0;

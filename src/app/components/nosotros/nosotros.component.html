@@ -4,21 +4,21 @@
   <div class="sep-link mx-auto mb-4"></div>
 
   <div class="row w-100 text-uppercase mx-auto">
-    <button name="vision" class="col-md btn btn-primary text-uppercase fw-bold p-2">
+    <button (click)="showVision()" name="vision" class="col-md btn btn-primary text-uppercase fw-bold p-2">
       <div class="cont-icon bg-white mx-auto mb-1 p-3">
         <i class="fas fa-glasses"></i>
       </div>
       Visión
     </button>
 
-    <button name="mision" class="col-md btn btn-primary fw-bold text-uppercase p-2">
+    <button (click)="showMision()" name="mision" class="col-md btn btn-primary fw-bold text-uppercase p-2">
       <div class="cont-icon bg-white mx-auto mb-1 p-3">
         <i class="fas fa-globe-asia"></i>
       </div>
       misión
     </button>
 
-    <button name="valores" class="col-md btn btn-primary fw-bold text-uppercase p-2">
+    <button (click)="showValores()" name="valores" class="col-md btn btn-primary fw-bold text-uppercase p-2">
       <div class="cont-icon bg-white mx-auto mb-1 p-3">
         <i class="far fa-handshake"></i>
       </div>
@@ -27,10 +27,31 @@
   </div>
 
   <!-- content dinamic -->
-  <div class="row w-100 mx-auto">
+  <div class="cont-too row w-100 mx-auto">
+
+    <div *ngIf="defectCont" class="cont-dinamic container-fluid cont-img-dinamic"></div>
 
     <!-- vision -->
-    <div class="col cont-dinamic"></div>
+    <div *ngIf="contVision" class="cont-vision container-fluid cont-img-dinamic">
+      <div class="mt-5 p-5">
+        <h2>Visión</h2>
+        <p>“Ser una empresa referente, moderna y de excelencia, con fuerte presencia en los mercados en que participa.”
+        </p>
+      </div>
+    </div>
+
+    <div *ngIf="contMision" class="cont-mision container-fluid cont-img-dinamic">
+      <div class="mt-5 p-5">
+        <h2>Misión</h2>
+        <p>
+          “Somos un equipo de profesionales de la ingeniería apasionados por crecer y ser más, para contribuir en el
+          desarrollo de personas y empresas por medio de la creación de soluciones de ingeniería y gestión de proyectos,
+          implementando procesos validados, que permitan alcanzar los objetivos y visiones de nuestros clientes.”
+        </p>
+      </div>
+    </div>
+
+    <div *ngIf="contValores" class="cont-valores container-fluid cont-img-dinamic"></div>
   </div>
 
 </div>

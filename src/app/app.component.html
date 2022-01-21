@@ -1,3 +1,5 @@
+
+<div *ngIf="contMain">
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm position-fixed w-100" #navbar (window:scroll)="animateNavbar(navbar)">
   <div class="container-fluid">
@@ -61,4 +63,18 @@
 
   <!-- contacto -->
   <app-contacto id="contacto"></app-contacto>
+</div>
+
+
+<div *ngIf="!contMain">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm position-fixed w-100" #navbar>
+    <div class="container-fluid">
   
+      <a class="navbar-brand cont-logo">
+        <img src="../assets/images/logo-hc.png" style="width: 250px;" alt="logo empresa">
+      </a>  
+    </div>
+  </nav>
+  
+  <app-allproyectos></app-allproyectos>
+</div>
