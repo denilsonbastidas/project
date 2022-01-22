@@ -11,6 +11,7 @@ import { ClientesComponent } from './components/clientes/clientes.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { AllproyectosComponent } from './components/allproyectos/allproyectos.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { ContmainComponent } from './components/contmain/contmain.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { SliderComponent } from './components/slider/slider.component';
     ContactoComponent,
     AllproyectosComponent,
     SliderComponent,
+    ContmainComponent,
   ],
   imports: [
     BrowserModule,

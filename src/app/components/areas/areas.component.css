@@ -1,14 +1,41 @@
 @import url("../../../assets/varColors.css");
 
-.cont-img{
-    width: 75px;
-}
 
 .bg-img{
     background-image: url("../../../assets/images/gestion-1.jpg") ;
     height: 550px;
 }
+.text-ing{
+font-size: 17px;
+}
+.ingenieros .cont-title{
+background-color: #88AB15;
+}
+.gestion .cont-title{
+    background-color: rgb(240 135 29);
+}
+.bim .cont-title{
+    background-color: #D72586;
+}
+.inspeccion .cont-title{
+    background-color: #009fdd;
+}
 
+.cont-btn button{
+  box-shadow: none;
+}
+.cont-dinamic div{
+animation: show 1s ease;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
 
 
 

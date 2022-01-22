@@ -1,0 +1,39 @@
+@import url("../../../assets/varColors.css");
+
+/* navbar */
+.navbar {
+  height: 85px;
+  z-index: 2;
+  transition: all 1s ease-in-out 0s;
+}
+
+.cont-logo {
+  width: 230px;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav button {
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+  font-size: 15.7px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-claro);
+}
+
+.active {
+  color: var(--color-claro) !important;
+}
+
+.btn-toggle {
+  background-color: var(--color-active);
+}
+
+/* event scroll */
+.event-scroll {
+  height: 60px;
+  transition: all 1s ease-in-out 0s;
+}

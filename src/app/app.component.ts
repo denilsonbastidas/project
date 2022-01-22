@@ -12,19 +12,17 @@ export class AppComponent {
   constructor(
     private _renderer: Renderer2,
 
-  ) {  }
-  ngOnInit() {  }
+  ) { }
+  ngOnInit() { }
 
   // animation navbar
-  animateNavbar(navbar: any) {
+  animateNavbar(navbar: any,event:any) {
 
     var scrollUserY = window.scrollY;
-  
     if (scrollUserY > 100) {
-       this._renderer.addClass(navbar, 'event-scroll');
+      this._renderer.addClass(navbar, 'event-scroll');
     } else {
-       this._renderer.removeClass(navbar, 'event-scroll');
-    }
+      this._renderer.removeClass(navbar, 'event-scroll');
+    }          
   }
-
 }

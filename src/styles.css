@@ -18,3 +18,29 @@ body{
     border-radius: 3px;
     background-color: var(--color-btns);
 }
+
+/* efect */
+.cont-card{
+    position: relative;
+    overflow: hidden;
+}
+.cont-efect{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    bottom: 0px;
+    right: 0px;
+    width: 93%;
+    height: 100%;
+    background-color: rgba(85, 85, 85, 0.651);
+    transition: all 400ms;
+    transform: translateY(200%);
+    cursor: pointer;
+}
+.cont-card:hover .cont-efect{
+    transform: translateY(0%);
+}
+.cont-efect p{
+    line-height: 36px;
+    font-size: 15px;
+}

@@ -1,18 +1,20 @@
-.viewer{
-    
-    width:18%;
-    display: block;
-    text-decoration: none;
-    background-color: #f8f8f8;
-    color: #444;
-    font-size: 18px;
-    margin-left: -30px;
-    
+.cont-btn-project button{
+    width: 18%;
+    background-color: #eee;
+}
+.cont-btn-project button:hover{
+    background-color:rgba(238, 238, 238, 0.623);
 }
 
-
-
-
-
-
-
+/* edit efect hover*/
+.cont-efect{
+    width: 95%;
+    background-color: rgb(151 190 22 / 85%);
+}
+.cont-efect p{
+    line-height: 26px;
+    font-size: 14px;
+}
+.cont-efect .cont-img {
+    width: 80px;
+}

@@ -24,7 +24,7 @@
   font-size: 35px;
 }
 /* content dinamic */
-.cont-too img{
+.cont-too div{
   animation: showproject 1s ease;
 }
 
