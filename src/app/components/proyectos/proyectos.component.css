@@ -10,21 +10,9 @@
     
 }
 
-.flRigth{
-    float: right;
-}
 
-img{
-    width:100%;
-}
-.row{
-    display: flex;
-    padding: 1px;
-}
-.column{
-    flex:25%;
-    padding: 5px;
-}
-.column img{
-    padding-top: 5px;
-}
+
+
+
+
+
