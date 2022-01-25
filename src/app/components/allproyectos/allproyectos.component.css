@@ -1,0 +1,31 @@
+.nav-project button{
+    box-shadow: none;
+    transition: all 300ms;
+    
+}
+
+.nav-project button:hover{
+    color: white;
+}
+
+
+.nav-project :nth-child(1){
+    
+    background-color: #0B72CF;
+
+}
+
+.nav-project :nth-child(2):hover{
+    background-color: #a6c738;
+    
+}
+.nav-project :nth-child(3):hover{
+    background-color: #f2983e;
+    
+}
+
+.nav-project :nth-child(4):hover{
+    background-color: #dd4598;
+    
+}
+
