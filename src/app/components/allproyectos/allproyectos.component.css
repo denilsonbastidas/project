@@ -4,17 +4,6 @@
     
 }
 
-.nav-project button:hover{
-    color: white;
-}
-
-
-.nav-project :nth-child(1){
-    
-    background-color: #0B72CF;
-
-}
-
 .nav-project :nth-child(2):hover{
     background-color: #a6c738;
     
@@ -25,7 +14,49 @@
 }
 
 .nav-project :nth-child(4):hover{
+    background-color: #dd4598;    
+}
+
+.cont-card{
+    border: 2px solid #fff;
+}
+.cont-card h4{
+    font-style: italic;
+}
+.cont-card p{
+    font-size: 15px;
+}
+.gray{
+    background-color: #eee;
+}
+.cont-card-all{
+    animation: show 1s ease;
+}
+.activeToo{
+    color: #fff ;
+    background-color: #0B72CF;
+}
+
+.activeIng{
+    color: #fff ;
+    background-color: #a6c738;
+}
+.activeGest{
+    color: #fff ;
+    background-color: #f2983e;
+}
+.activeBim{
+    color: #fff;
     background-color: #dd4598;
-    
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: translateY(8%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
