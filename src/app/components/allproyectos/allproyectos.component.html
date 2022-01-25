@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm w-100 mb-5">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm w-100 mb-4">
 
   <a class="navbar-brand cont-logo d-block" [routerLink]="['/']">
     <img src="../assets/images/logo-hc.png" style="width: 230px;" alt="logo empresa">
@@ -8,17 +8,259 @@
 <div class="container-fluid mb-3">
   <nav class="d-flex flex-wrap nav-project justify-content-start mx-0">
     
-      <button class="btn rounded p-2 ">Mostrar todos</button>
+      <button #btnToo (click)="EventToo(btnIng,btnToo,btnGest,btnBim)" class="btn p-2 activeToo">Mostrar todos</button>
     
-      <button class="btn rounded p-2 ">HC ingenieros</button>
+      <button #btnIng (click)="EventIng(btnIng,btnToo,btnGest,btnBim)"  class="btn p-2 ">HC ingenieros</button>
     
-      <button class="btn rounded p-2">HC Gestion</button>
+      <button #btnGest (click)="EventGestion(btnIng,btnToo,btnGest,btnBim)" class="btn p-2">HC Gestion</button>
     
-      <button class="btn rounded p-2">HC BIM</button>
+      <button #btnBim (click)="EventBim(btnIng,btnToo,btnGest,btnBim)" class="btn p-2">HC BIM</button>
     
   </nav>
 </div>
 
-   
+ <div class="container-fluid mt-1">
+
+   <!-- Too -->
+   <div  *ngIf="too" class="row cont-card-all">
+
+     <div class="cont-card d-flex flex-wrap">
+      <div class="col-5 p-3">
+        <h4 class="px-4">Edificio Río Calle Calle</h4>
+      </div>
+
+      <div class="col-6 p-3">
+        <p>  <b>Año:</b> 2017</p>
+        <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+        <p> <b>Servicio:</b> Movimiento de Tierra</p>
+        <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+        <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+      </div>
+     </div>
+
+     <div class="cont-card d-flex flex-wrap gray">
+      <div class="col-5 p-3">
+        <h4 class="px-4">Jardín Mirador</h4>
+      </div>
+
+      <div class="col-6 p-3">
+        <p>  <b>Año:</b> 2017</p>
+        <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+        <p> <b>Servicio:</b> Movimiento de Tierra</p>
+        <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+        <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+      </div>
+     </div>
+
+     <div class="cont-card d-flex flex-wrap">
+      <div class="col-5 p-3">
+        <h4 class="px-4">Edificio Baden 4870</h4>
+      </div>
+
+      <div class="col-6 p-3">
+        <p>  <b>Año:</b> 2017</p>
+        <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+        <p> <b>Servicio:</b> Movimiento de Tierra</p>
+        <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+        <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+      </div>
+     </div>
+
+     <div class="cont-card d-flex flex-wrap gray">
+      <div class="col-5 p-3">
+        <h4 class="px-4">Mirador</h4>
+      </div>
+
+      <div class="col-6 p-3">
+        <p>  <b>Año:</b> 2017</p>
+        <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+        <p> <b>Servicio:</b> Movimiento de Tierra</p>
+        <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+        <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+      </div>
+     </div>
+   </div>
+
+   <!-- ing -->
+   <div  *ngIf="ing" class="row cont-card-all">
+
+    <div class="cont-card d-flex flex-wrap">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Cambio 2</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2020</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+
+    <div class="cont-card d-flex flex-wrap">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Jardín Mirador</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2017</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+
+    <div class="cont-card d-flex flex-wrap">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Edificio Baden 4870</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2017</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+
+    <div class="cont-card d-flex flex-wrap gray">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Mirador</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2017</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+  </div>
+
+  <!-- gestion -->
+  <div  *ngIf="gestion" class="row cont-card-all">
+
+    <div class="cont-card d-flex flex-wrap gray">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Cambio 3</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2020</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+
+    <div class="cont-card d-flex flex-wrap">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Jardín Mirador</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2017</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+
+    <div class="cont-card d-flex flex-wrap">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Edificio Baden 4870</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2017</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+
+    <div class="cont-card d-flex flex-wrap">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Mirador</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2017</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+  </div>
+
+  <!-- bim -->
+  <div  *ngIf="bim" class="row cont-card-all">
+
+    <div class="cont-card d-flex flex-wrap gray">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Cambio 4</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2020</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+
+    <div class="cont-card d-flex flex-wrap gray">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Jardín Mirador</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2017</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+
+    <div class="cont-card d-flex flex-wrap gray">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Edificio Baden 4870</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2017</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+
+    <div class="cont-card d-flex flex-wrap gray">
+     <div class="col-5 p-3">
+       <h4 class="px-4">Mirador</h4>
+     </div>
+
+     <div class="col-6 p-3">
+       <p>  <b>Año:</b> 2017</p>
+       <p> <b>Mandante:</b> Inmobiliaria CIVILIA</p>
+       <p> <b>Servicio:</b> Movimiento de Tierra</p>
+       <p> <b>Superficie:</b> 286 departamentos – 17.000 m2</p>
+       <p> <b>Ubicación:</b> Temuco – Región de La Araucanía</p>
+     </div>
+    </div>
+  </div>
+
+ </div>  
  
  
