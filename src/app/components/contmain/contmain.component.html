@@ -1,65 +1,81 @@
+<!-- navbar -->
+<nav
+  class="
+    navbar navbar-expand-lg navbar-light
+    bg-white
+    shadow-sm
+    position-fixed
+    w-100
+  "
+  #navbar
+  (window:scroll)="animateNavbar(navbar)"
+>
+  <div class="container-fluid">
+    <a class="cont-img-logo navbar-brand" href="/">
+      <img
+        src="../assets/images/logo-hc.png"
+        alt="logo empresa"
+        class="w-100 d-block"
+      />
+    </a>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm position-fixed w-100" #navbar (window:scroll)="animateNavbar(navbar)">
-      <div class="container-fluid">
-    
-        <a class="navbar-brand cont-logo d-block" href="/">
-          <img src="../assets/images/logo-hc.png" style="width: 230px;" alt="logo empresa">
+    <div class="navbar-nav">
+      <a class="nav-link" aria-current="page" href="#nosotros">Nosotros</a>
+      <a class="nav-link" href="#areas">Áreas</a>
+      <a class="nav-link" href="#proyectos">Proyectos</a>
+      <a class="nav-link" href="#equipo">Equipo</a>
+      <a class="nav-link" href="#clientes">Clientes</a>
+      <a class="nav-link" href="#contacto">Contacto</a>
+
+      <li class="nav-item dropdown mx-4 cont-intra">
+        <a
+          class="btn btn-toggle text-white dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Intranet
         </a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="d-block mx-5"></div>
-        <div class="d-block mx-5"></div>
-        <div class="d-block mx-5"></div>
-        <div class="d-block mx-4"></div>
-    
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav" >
-            <a class="nav-link" aria-current="page" href="#nosotros">Nosotros</a>
-            <a class="nav-link" href="#areas">Áreas</a>
-            <a class="nav-link" href="#proyectos">Proyectos</a>
-            <a class="nav-link" href="#equipo">Equipo</a>
-            <a class="nav-link" href="#clientes">Clientes</a>
-            <a class="nav-link" href="#contacto">Contacto</a>
-    
-            <li class="nav-item dropdown mx-4">
-              <a class="btn btn-toggle text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Intranet
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"> <i class="far fa-address-card"></i> Ir al Intranet</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#"> <i class="far fa-envelope"></i> Login</a></li>
-              </ul>
-            </li>
-        </div>
-      </div>
-    
-      </div>
-    </nav>
-    
-      <!-- slider -->
-      <app-slider></app-slider>
-    
-      <!-- nosotros -->
-      <app-nosotros id="nosotros"></app-nosotros>
-    
-      <!-- area -->
-      <app-areas id="areas"></app-areas>
-    
-      <!-- proyectos -->
-      <app-proyectos id="proyectos"></app-proyectos>
-    
-      <!-- equipos -->
-      <app-equipo id="equipo"></app-equipo>
-    
-      <!-- clientes -->
-      <app-clientes id="clientes"></app-clientes>
-    
-      <!-- contacto -->
-      <app-contacto id="contacto"></app-contacto>
-    
+        <ul
+          class="dropdown-menu position-absolute list-desple"
+          aria-labelledby="navbarDropdown"
+        >
+          <li>
+            <a class="dropdown-item" href="#">
+              <i class="far fa-address-card"></i> Ir al Intranet</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <i class="far fa-envelope"></i> Login</a
+            >
+          </li>
+        </ul>
+      </li>
+    </div>
+  </div>
+</nav>
+
+<!-- slider -->
+<app-slider></app-slider>
+
+<!-- nosotros -->
+<app-nosotros id="nosotros"></app-nosotros>
+
+<!-- area -->
+<app-areas id="areas"></app-areas>
+
+<!-- proyectos -->
+<app-proyectos id="proyectos"></app-proyectos>
+
+<!-- equipos -->
+<app-equipo id="equipo"></app-equipo>
+
+<!-- clientes -->
+<app-clientes id="clientes"></app-clientes>
+
+<!-- contacto -->
+<app-contacto id="contacto"></app-contacto>

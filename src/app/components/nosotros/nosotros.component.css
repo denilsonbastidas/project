@@ -1,65 +1,61 @@
-@import url("../../../assets/varColors.css");
+@import url('../../../assets/varColors.css');
 
-.cont-nosotros{
-    margin-top: 120px;
+.cont-nosotros {
+  margin-top: 100px;
 }
-.cont-nosotros button{
+.cont-nosotros button {
   border-radius: 0;
   background-color: var(--color-active);
   border: none;
 }
-.cont-nosotros button:hover{
+.cont-nosotros button:hover {
   background-color: var(--color-btns);
 }
 
-
 /* collapse section */
-.cont-icon{
+.cont-icon {
   width: 80px;
   height: 80px;
   border-radius: 555px;
 }
-.cont-icon i{
+.cont-icon i {
   color: var(--color-btns);
   font-size: 35px;
 }
 /* content dinamic */
-.cont-too div{
+.cont-too div {
   animation: showproject 1s ease;
 }
 
-.cont-img-dinamic{
+.cont-img-dinamic {
   height: 500px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.cont-dinamic{
-  background-image: url("../../../assets/images/hc-calle.jpg");
+.cont-dinamic {
+  background-image: url('../../../assets/images/hc-calle.jpg');
 }
-.cont-vision{
-  background-image: url("../../../assets/images/vision.jpg");
+.cont-vision {
+  background-image: url('../../../assets/images/vision.jpg');
 }
 .cont-vision p,
-.cont-mision p{
+.cont-mision p {
   width: 35%;
-   font-size: 18px;
-   letter-spacing: 1px;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
-.cont-mision{
-  background-image: url("../../../assets/images/vision.jpg");
+.cont-mision {
+  background-image: url('../../../assets/images/vision.jpg');
 }
-.cont-valores{
-  background-image: url("../../../assets/images/banner-Inspeccion.jpg");
+.cont-valores {
+  background-image: url('../../../assets/images/banner-Inspeccion.jpg');
 }
 
-
-  
 @keyframes showproject {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-
