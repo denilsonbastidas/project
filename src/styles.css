@@ -27,10 +27,10 @@ body {
 .cont-efect {
   position: absolute;
   top: 0px;
-  left: 10px;
+  left: 0px;
   bottom: 0px;
   right: 0px;
-  width: 93%;
+  width: 100%;
   height: 100%;
   background-color: rgba(85, 85, 85, 0.651);
   transition: all 400ms;
@@ -56,10 +56,27 @@ body {
   .cont-intra {
     display: none !important;
   }
+
+  .cont-btn-project {
+    justify-content: center !important;
+  }
+
+  .cont-img-dinamic div {
+    padding: 0px !important;
+    margin-top: 7px !important ;
+  }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .cont-img-dinamic p {
+    width: 100% !important;
+    font-size: 15px !important;
+  }
+
+  .cont-text-dina {
+    width: 100% !important;
+  }
   .cont-img-logo {
     width: 200px !important;
   }
@@ -78,6 +95,19 @@ body {
   .carousel-control-next {
     display: none !important;
   }
+  .cont-nosotros {
+    margin-top: 0px !important;
+  }
+  .cont-nosotros button {
+    border: 2px solid #fff !important;
+  }
+  .cont-img-areas {
+    width: 230px !important;
+  }
+  .contact-bx {
+    width: 100% !important;
+    text-align: center !important;
+  }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -85,10 +115,16 @@ body {
   .navbar-nav > a {
     display: none !important;
   }
+  .cont-btn-project button {
+    width: 50% !important;
+  }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .cont-title {
+    width: 100% !important;
+  }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */

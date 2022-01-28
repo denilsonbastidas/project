@@ -3,440 +3,477 @@
   <div class="sep-link"></div>
 </div>
 
-<div class="row mx-auto w-100 mb-5 cont-btn">
-  <button (click)="contIng()" class="col-md btn cont-img btn">
-    <img src="../../../assets/images/hc-gestion.png" class="w-100 d-block">
+<div class="row w-100 mb-5 cont-btn justify-content-center">
+  <button (click)="contIng()" class="col-md btn btn mb-1">
+    <div class="p-3">
+      <div class="cont-img-areas mx-auto mx-auto" style="width: 250px">
+        <img
+          src="../../../assets/images/hc-gestion.png"
+          class="w-100 d-block"
+        />
+      </div>
+    </div>
   </button>
-  <button (click)="contGest()" class="col-md btn cont-img ">
-    <img src="../../../assets/images/hc-gestion.png" class="w-100 d-block">
+  <button (click)="contGest()" class="col-md btn mb-1">
+    <div class="p-3">
+      <div class="cont-img-areas mx-auto" style="width: 250px">
+        <img
+          src="../../../assets/images/hc-gestion.png"
+          class="w-100 d-block"
+        />
+      </div>
+    </div>
   </button>
-  <button (click)="contBim()" class="col-md btn cont-img ">
-    <img src="../../../assets/images/hc-gestion.png" class="w-100 d-block">
+  <button (click)="contBim()" class="col-md btn mb-1">
+    <div class="p-3">
+      <div class="cont-img-areas mx-auto" style="width: 250px">
+        <img
+          src="../../../assets/images/hc-gestion.png"
+          class="w-100 d-block"
+        />
+      </div>
+    </div>
   </button>
-  <button (click)="contInsp()" class="col-md btn cont-img ">
-    <img src="../../../assets/images/hc-gestion.png" class="w-100 d-block">
+  <button (click)="contInsp()" class="col-md btn mb-1">
+    <div class="p-3">
+      <div class="cont-img-areas mx-auto" style="width: 250px">
+        <img
+          src="../../../assets/images/hc-gestion.png"
+          class="w-100 d-block"
+        />
+      </div>
+    </div>
   </button>
 </div>
 
 <!-- cont dinamic -->
 <div class="row w-100 mx-auto mb-5 cont-dinamic">
-
   <div *ngIf="defect" class="bg-img container-fluid"></div>
 
   <!-- ingenieros -->
   <div *ngIf="ingenieros" class="cont-ing mb-5">
-    <div class="d-flex flex-wrap w-50 mx-auto mb-3">
+    <div class="d-flex flex-wrap w-75 mx-auto mb-3">
       <p class="text-center text-ing">
-        Nos dedicamos al desarrollo, coordinación y ejecución de proyectos de ingeniería, asesorando durante la
-        ejecución
-        de cada una de las etapas, siempre velando por alcanzar altos estándares de cumplimiento. Contamos a su vez, con
-        las capacidades y recursos necesarios para gestionar las aprobaciones de los mismos ante las instituciones
-        públicas, según las necesidades de nuestros clientes.
+        Nos dedicamos al desarrollo, coordinación y ejecución de proyectos de
+        ingeniería, asesorando durante la ejecución de cada una de las etapas,
+        siempre velando por alcanzar altos estándares de cumplimiento. Contamos
+        a su vez, con las capacidades y recursos necesarios para gestionar las
+        aprobaciones de los mismos ante las instituciones públicas, según las
+        necesidades de nuestros clientes.
       </p>
     </div>
 
-    <div class="row justify-content-center ingenieros">
-
+    <div class="d-flex flex-wrap justify-content-center ingenieros">
       <!-- card -->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo1.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2 mt-2">Moviemiento de la tierra</h6>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2 mt-2">
+            Moviemiento de la tierra
+          </h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Diseño optimizado de Mov. De Tierra Masivo.
-
-            Cuantificación de volúmenes.
-
-            Estimación de Costos.
-
-            Generación de Modelo 3D.
+            Diseño optimizado de Mov. De Tierra Masivo. Cuantificación de
+            volúmenes. Estimación de Costos. Generación de Modelo 3D.
           </p>
         </div>
       </div>
 
       <!-- card One -->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo2.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
+        <div class="cont-title text-center p-3 h-50">
           <h6 class="text-white text-uppercase mt-2">Pavimentacion</h6>
         </div>
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Diseño Losas Industriales Mediantes Modelos Numéricos.
-
-            Diseño Pavimentos Interiores.
-
-            Diseños Viales.
-
-            Proyectos Públicos. (SERVIU/MOP)
+            Diseño Losas Industriales Mediantes Modelos Numéricos. Diseño
+            Pavimentos Interiores. Diseños Viales. Proyectos Públicos.
+            (SERVIU/MOP)
           </p>
         </div>
       </div>
 
       <!-- card Dwo-->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo3.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
+        <div class="cont-title text-center p-3 h-50">
           <h6 class="text-white text-uppercase mt-2">Hidraulica</h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Diseño Losas Industriales Mediantes Modelos Numéricos.
-
-            Diseño Pavimentos Interiores.
-
-            Diseños Viales.
-
-            Proyectos Públicos. (SERVIU/MOP)
-
-            PAVIMENTACIÓN
-
+            Diseño Losas Industriales Mediantes Modelos Numéricos. Diseño
+            Pavimentos Interiores. Diseños Viales. Proyectos Públicos.
+            (SERVIU/MOP) PAVIMENTACIÓN
           </p>
         </div>
       </div>
 
       <!-- card three-->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo4.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
+        <div class="cont-title text-center p-3 h-50">
           <h6 class="text-white text-uppercase mt-2">aguas lluvias</h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Proyectos Interiores.
-
-            Proyectos Públicos.
-
-            Tramitación DOH/DGA/SERVIU/MOP/ Canalistas
+            Proyectos Interiores. Proyectos Públicos. Tramitación
+            DOH/DGA/SERVIU/MOP/ Canalistas
           </p>
         </div>
       </div>
 
       <!-- card Four-->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo1.jpg" class="w-100">
-
-        <div class="cont-title text-center p-3 h-50 rounded">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
+        <div class="cont-title text-center p-3 h-50">
           <h6 class="text-white text-uppercase mt-2">Sanitario</h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Proyectos Domiciliarios.
-
-            Proyectos Públicos.
-
-            Proyectos de Aguas Grasas.
-
-            Tramitación Empresas Sanitarias/Seremi Salud.
+            Proyectos Domiciliarios. Proyectos Públicos. Proyectos de Aguas
+            Grasas. Tramitación Empresas Sanitarias/Seremi Salud.
           </p>
         </div>
       </div>
     </div>
-
   </div>
 
   <!-- gestion -->
   <div *ngIf="gestion" class="cont-ing mb-5">
-    <div class="d-flex flex-wrap w-50 mx-auto mb-3">
+    <div class="d-flex flex-wrap w-75 mx-auto mb-3">
       <p class="text-center text-ing">
-        Nos orientamos al gerenciamiento de proyectos multidisciplinarios, administrando procesos y liderando las etapas
-        del plan de inversión, dando cumplimiento a los objetivos de costos, plazos y calidad.
+        Nos dedicamos al desarrollo, coordinación y ejecución de proyectos de
+        ingeniería, asesorando durante la ejecución de cada una de las etapas,
+        siempre velando por alcanzar altos estándares de cumplimiento. Contamos
+        a su vez, con las capacidades y recursos necesarios para gestionar las
+        aprobaciones de los mismos ante las instituciones públicas, según las
+        necesidades de nuestros clientes.
       </p>
     </div>
 
-    <div class="row justify-content-center ingenieros">
-
+    <div class="d-flex flex-wrap justify-content-center gestion">
       <!-- card -->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo1.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2 mt-2">Planificacion</h6>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2 mt-2">
+            Moviemiento de la tierra
+          </h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Diseño optimizado de Mov. De Tierra Masivo.
-
-            Cuantificación de volúmenes.
-
-            Estimación de Costos.
-
-            Generación de Modelo 3D.
+            Diseño optimizado de Mov. De Tierra Masivo. Cuantificación de
+            volúmenes. Estimación de Costos. Generación de Modelo 3D.
           </p>
         </div>
       </div>
-
-      <!-- card one-->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo3.jpg" class="w-100">
-
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">coordinación e ingeniería</h6>
-        </div>
-
-        <div class="cont-efect text-center p-4 text-white">
-          <p>
-            Diseño Losas Industriales Mediantes Modelos Numéricos.
-
-            Diseño Pavimentos Interiores.
-
-            Diseños Viales.
-
-            Proyectos Públicos. (SERVIU/MOP)
-
-            PAVIMENTACIÓN
-
-          </p>
-        </div>
-      </div>
-
-      <!-- card Dwo-->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo4.jpg" class="w-100">
-
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">Licitacion</h6>
-        </div>
-
-        <div class="cont-efect text-center p-4 text-white">
-          <p>
-            Proyectos Interiores.
-
-            Proyectos Públicos.
-
-            Tramitación DOH/DGA/SERVIU/MOP/ Canalistas
-          </p>
-        </div>
-      </div>
-
-      <!-- card three-->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo1.jpg" class="w-100">
-
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">Control document</h6>
-        </div>
-
-        <div class="cont-efect text-center p-4 text-white">
-          <p>
-            Proyectos Domiciliarios.
-
-            Proyectos Públicos.
-
-            Proyectos de Aguas Grasas.
-
-            Tramitación Empresas Sanitarias/Seremi Salud.
-          </p>
-        </div>
-      </div>
-
-        <!-- card four-->
-        <div class="col-md cont-card">
-          <img src="../../../assets/images/equipo1.jpg" class="w-100">
-  
-          <div class="cont-title text-center p-3 h-50 rounded">
-            <h6 class="text-white text-uppercase mt-2">Control de obra</h6>
-          </div>
-  
-          <div class="cont-efect text-center p-4 text-white">
-            <p>
-              Proyectos Domiciliarios.
-  
-              Proyectos Públicos.
-  
-              Proyectos de Aguas Grasas.
-  
-              Tramitación Empresas Sanitarias/Seremi Salud.
-            </p>
-          </div>
-        </div>
-    </div>
-
-  </div>
-
-  <!-- BIM -->
-  <div *ngIf="bim" class="cont-ing mb-5">
-    <div class="d-flex flex-wrap w-50 mx-auto mb-3">
-      <p class="text-center text-ing">
-        Coordinamos proyectos de ingeniería a través de la metodología BIM permitiendo una mejor administración y
-        gestión de la información generada en cada etapa del proyecto, optimizando el uso de tiempo y recursos en el
-        diseño y construcción.
-      </p>
-    </div>
-
-    <div class="row justify-content-center ingenieros">
 
       <!-- card One -->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo2.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">Modelacion 3D</h6>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">Pavimentacion</h6>
         </div>
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Diseño Losas Industriales Mediantes Modelos Numéricos.
-
-            Diseño Pavimentos Interiores.
-
-            Diseños Viales.
-
-            Proyectos Públicos. (SERVIU/MOP)
+            Diseño Losas Industriales Mediantes Modelos Numéricos. Diseño
+            Pavimentos Interiores. Diseños Viales. Proyectos Públicos.
+            (SERVIU/MOP)
           </p>
         </div>
       </div>
 
       <!-- card Dwo-->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo3.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">Cordinacion</h6>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">Hidraulica</h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Diseño Losas Industriales Mediantes Modelos Numéricos.
-
-            Diseño Pavimentos Interiores.
-
-            Diseños Viales.
-
-            Proyectos Públicos. (SERVIU/MOP)
-
-            PAVIMENTACIÓN
-
+            Diseño Losas Industriales Mediantes Modelos Numéricos. Diseño
+            Pavimentos Interiores. Diseños Viales. Proyectos Públicos.
+            (SERVIU/MOP) PAVIMENTACIÓN
           </p>
         </div>
       </div>
 
       <!-- card three-->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo4.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">Cubicaciones</h6>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">aguas lluvias</h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Proyectos Interiores.
-
-            Proyectos Públicos.
-
-            Tramitación DOH/DGA/SERVIU/MOP/ Canalistas
+            Proyectos Interiores. Proyectos Públicos. Tramitación
+            DOH/DGA/SERVIU/MOP/ Canalistas
           </p>
         </div>
       </div>
 
       <!-- card Four-->
-      <div class="col-md cont-card">
-        <img src="../../../assets/images/equipo1.jpg" class="w-100">
-
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">construcción virtual 4D</h6>
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">Sanitario</h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Proyectos Domiciliarios.
-
-            Proyectos Públicos.
-
-            Proyectos de Aguas Grasas.
-
-            Tramitación Empresas Sanitarias/Seremi Salud.
+            Proyectos Domiciliarios. Proyectos Públicos. Proyectos de Aguas
+            Grasas. Tramitación Empresas Sanitarias/Seremi Salud.
           </p>
         </div>
       </div>
     </div>
-
   </div>
-
-
-  <!-- inspeccion -->
-  <div *ngIf="inspeccion" class="cont-ing mb-5">
-    <div class="d-flex flex-wrap w-50 mx-auto mb-3">
+  <!-- BIM -->
+  <div *ngIf="bim" class="cont-ing mb-5">
+    <div class="d-flex flex-wrap w-75 mx-auto mb-3">
       <p class="text-center text-ing">
-        Implementamos una metodología de trabajo que nos permite realizar un control detallado de la obra, tanto técnico
-        como administrativo, enfocándonos en los aspectos más importantes de un proyecto de construcción.
+        Nos dedicamos al desarrollo, coordinación y ejecución de proyectos de
+        ingeniería, asesorando durante la ejecución de cada una de las etapas,
+        siempre velando por alcanzar altos estándares de cumplimiento. Contamos
+        a su vez, con las capacidades y recursos necesarios para gestionar las
+        aprobaciones de los mismos ante las instituciones públicas, según las
+        necesidades de nuestros clientes.
       </p>
     </div>
 
-    <div class="row justify-content-center ingenieros">
+    <div class="d-flex flex-wrap justify-content-center bim">
+      <!-- card -->
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2 mt-2">
+            Moviemiento de la tierra
+          </h6>
+        </div>
 
+        <div class="cont-efect text-center p-4 text-white">
+          <p>
+            Diseño optimizado de Mov. De Tierra Masivo. Cuantificación de
+            volúmenes. Estimación de Costos. Generación de Modelo 3D.
+          </p>
+        </div>
+      </div>
 
       <!-- card One -->
-      <div class="col-md-3 cont-card">
-        <img src="../../../assets/images/equipo2.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">administración de contrato</h6>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">Pavimentacion</h6>
         </div>
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Diseño Losas Industriales Mediantes Modelos Numéricos.
-
-            Diseño Pavimentos Interiores.
-
-            Diseños Viales.
-
-            Proyectos Públicos. (SERVIU/MOP)
+            Diseño Losas Industriales Mediantes Modelos Numéricos. Diseño
+            Pavimentos Interiores. Diseños Viales. Proyectos Públicos.
+            (SERVIU/MOP)
           </p>
         </div>
       </div>
 
       <!-- card Dwo-->
-      <div class="col-md-3 cont-card">
-        <img src="../../../assets/images/equipo3.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">administración de obra</h6>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">Hidraulica</h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Diseño Losas Industriales Mediantes Modelos Numéricos.
-
-            Diseño Pavimentos Interiores.
-
-            Diseños Viales.
-
-            Proyectos Públicos. (SERVIU/MOP)
-
-            PAVIMENTACIÓN
-
+            Diseño Losas Industriales Mediantes Modelos Numéricos. Diseño
+            Pavimentos Interiores. Diseños Viales. Proyectos Públicos.
+            (SERVIU/MOP) PAVIMENTACIÓN
           </p>
         </div>
       </div>
 
       <!-- card three-->
-      <div class="col-md-3 cont-card">
-        <img src="../../../assets/images/equipo4.jpg" class="w-100">
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
 
-        <div class="cont-title text-center p-3 h-50 rounded">
-          <h6 class="text-white text-uppercase mt-2">Bim en obra</h6>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">aguas lluvias</h6>
         </div>
 
         <div class="cont-efect text-center p-4 text-white">
           <p>
-            Proyectos Interiores.
+            Proyectos Interiores. Proyectos Públicos. Tramitación
+            DOH/DGA/SERVIU/MOP/ Canalistas
+          </p>
+        </div>
+      </div>
 
-            Proyectos Públicos.
+      <!-- card Four-->
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">Sanitario</h6>
+        </div>
 
-            Tramitación DOH/DGA/SERVIU/MOP/ Canalistas
+        <div class="cont-efect text-center p-4 text-white">
+          <p>
+            Proyectos Domiciliarios. Proyectos Públicos. Proyectos de Aguas
+            Grasas. Tramitación Empresas Sanitarias/Seremi Salud.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- inspeccion -->
+  <div *ngIf="inspeccion" class="cont-ing mb-5">
+    <div class="d-flex flex-wrap w-75 mx-auto mb-3">
+      <p class="text-center text-ing">
+        Nos dedicamos al desarrollo, coordinación y ejecución de proyectos de
+        ingeniería, asesorando durante la ejecución de cada una de las etapas,
+        siempre velando por alcanzar altos estándares de cumplimiento. Contamos
+        a su vez, con las capacidades y recursos necesarios para gestionar las
+        aprobaciones de los mismos ante las instituciones públicas, según las
+        necesidades de nuestros clientes.
+      </p>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center inspeccion">
+      <!-- card -->
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
+
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2 mt-2">
+            Moviemiento de la tierra
+          </h6>
+        </div>
+
+        <div class="cont-efect text-center p-4 text-white">
+          <p>
+            Diseño optimizado de Mov. De Tierra Masivo. Cuantificación de
+            volúmenes. Estimación de Costos. Generación de Modelo 3D.
+          </p>
+        </div>
+      </div>
+
+      <!-- card One -->
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
+
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">Pavimentacion</h6>
+        </div>
+        <div class="cont-efect text-center p-4 text-white">
+          <p>
+            Diseño Losas Industriales Mediantes Modelos Numéricos. Diseño
+            Pavimentos Interiores. Diseños Viales. Proyectos Públicos.
+            (SERVIU/MOP)
+          </p>
+        </div>
+      </div>
+
+      <!-- card Dwo-->
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
+
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">Hidraulica</h6>
+        </div>
+
+        <div class="cont-efect text-center p-4 text-white">
+          <p>
+            Diseño Losas Industriales Mediantes Modelos Numéricos. Diseño
+            Pavimentos Interiores. Diseños Viales. Proyectos Públicos.
+            (SERVIU/MOP) PAVIMENTACIÓN
+          </p>
+        </div>
+      </div>
+
+      <!-- card three-->
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
+
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">aguas lluvias</h6>
+        </div>
+
+        <div class="cont-efect text-center p-4 text-white">
+          <p>
+            Proyectos Interiores. Proyectos Públicos. Tramitación
+            DOH/DGA/SERVIU/MOP/ Canalistas
+          </p>
+        </div>
+      </div>
+
+      <!-- card Four-->
+      <div class="cont-card m-1" style="width: 250px">
+        <div class="cont-img-areas-dinamic">
+          <img src="../../../assets/images/equipo1.jpg" class="w-100" />
+        </div>
+        <div class="cont-title text-center p-3 h-50">
+          <h6 class="text-white text-uppercase mt-2">Sanitario</h6>
+        </div>
+
+        <div class="cont-efect text-center p-4 text-white">
+          <p>
+            Proyectos Domiciliarios. Proyectos Públicos. Proyectos de Aguas
+            Grasas. Tramitación Empresas Sanitarias/Seremi Salud.
           </p>
         </div>
       </div>

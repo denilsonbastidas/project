@@ -1,17 +1,16 @@
-#equipo{
-    background-color: #dddddd;
-    
+#equipo {
+  background-color: #dddddd;
 }
 
-.squad p{
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 1px;
-    text-align: center;
+.squad p {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-.mT3{
-    margin-top: 3%;
+.mT3 {
+  margin-top: 3%;
 }
 
 /*
@@ -24,81 +23,75 @@
   }
 */
 
-
-.profile-bx img{
-
-    width: 100%;
-    height: auto;
-    display: block;
-    
-  }
-
-img{
-    border: 0;
-}  
-
-.col-md{
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-
+.profile-bx img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.cont-img{
-    width: 90%;
-    padding-left: 20px;
-    padding-right: 20px;
+img {
+  border: 0;
 }
-.equipo-img{
-    
-    width: 25%;
-} 
 
+.col-md {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
+.cont-img {
+  width: 90%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.equipo-img {
+  width: 25%;
+}
 
-.profile-bx:hover .hovering{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding-top: 15%;
-    padding-left: 30px;
-    padding-right: 30px;
-    opacity: 1;
-  }
+.profile-bx:hover .hovering {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 15%;
+  padding-left: 30px;
+  padding-right: 30px;
+  opacity: 1;
+  overflow: hidden;
+}
 
-.img-hovering{
-    width: 200px;
+.img-hovering {
+  width: 200px;
 }
 .profile-bx .hovering h3 {
-    font-family: 'nolan_nextregular';
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-bottom: 0px;
-  }
-  .profile-bx .hovering {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding-top: 90%;
-    padding-left: 30px;
-    padding-right: 30px;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    text-align: center;
-    background: #97BE16;
-    color: white;
-  }
-  .profile-bx:hover .hcgestion {
-    background-color: #F0871D;
-  }
+  font-family: 'nolan_nextregular';
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+.profile-bx .hovering {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 90%;
+  padding-left: 30px;
+  padding-right: 30px;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  background: #97be16;
+  color: white;
+}
+.profile-bx:hover .hcgestion {
+  background-color: #f0871d;
+}
